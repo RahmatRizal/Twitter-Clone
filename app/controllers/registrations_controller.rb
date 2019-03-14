@@ -1,4 +1,4 @@
-class RegistrationsCotroller < Devise::RegistrationsCotroller
+class RegistrationsController < Devise::RegistrationsController
 
 private_methods
     

@@ -36,14 +36,17 @@
 
     <div id="navbarExample" class="navbar-menu">
       <div class="navbar-end">
-        <div class="field is-grouped">
-          <p class="control">
-            <%= link_to 'New Tweet', new_tweet_path, class: "button is-info is-inverted" %>
+        <div class="navbar-item">
+          <%= link_to 'New Tweet', new_tweet_path, class: "button is-success is-inverted" %>
+        </div>
+        <div class="navbar-item">
+          <p class="button is-success is-inverted">
+            Logout
           </p>
-          <p class="control">Sign Up</p>
         </div>
       </div>
     </div>
+
   </nav>
 
   <%= yield %>

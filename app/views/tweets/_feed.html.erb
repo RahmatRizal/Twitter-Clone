@@ -1,4 +1,5 @@
 <div class="column is-half">
+    <% if user_signed_in? %>
     <article class="media box">
         <figure class="media-left">
             <p class="image is-64x64">
@@ -9,6 +10,7 @@
             <%= render 'tweets/form'%>
         </div>
     </article>
+    <% end %>
 
 <% @tweets.each do |t| %>
     <div class="box">
@@ -24,6 +26,7 @@
                     <small><%= t.user.email  %></small><br />
                     <p><%= t.tweet %></p>
                 </div>
+                <% if user_signed_in? %>
                 <nav class="level">
                     <div class="level-left is-mobile">
                         <%= link_to t, class: "level-item" do %>
@@ -37,6 +40,7 @@
                         <% end %>
                     </div>
                 </nav>
+                <% end %>
             </div>
         </article>
     </div>

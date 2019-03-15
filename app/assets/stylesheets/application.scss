@@ -28,6 +28,12 @@
      }
  }
 
+ .divider{
+    width:10px;
+    height:auto;
+    display:inline-block;
+}
+
  .notification:not(:last-child){
      margin-bottom: 0;
  }
